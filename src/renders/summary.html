@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        /* PAGE */
+    
+        .cover {
+            width: 595px;
+            height: 842px;
+            border-width: 1px;
+            display: flex;
+            justify-content: flex-start;
+        }
+    
+        .page {
+            width: 595px;
+            height: 842px;
+            display: flex;
+            flex-direction: column;
+        }
+    
+        /* COVER */
+    
+        .coverHeader {
+            height: 154px;
+            width: 595px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+    
+        .coverClientInformationContainer1 {
+            height: 154px;
+            width: 237px;
+            margin-left: 34px;
+    
+        }
+        .coverClientInformationContainer2 {
+            height: 154px;
+            width: 237px;
+            margin-left: 55px;
+        }
+        
+        .coverClientFullName {
+            width: 237px;
+            height: 14px;
+            margin-top: 29px;
+            font-family: 'Montserrat-Regular';
+            font-size: 11px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #000;
+        }
+        .coverClientTelephone {
+            width: 237px;
+            height: 13px;
+            margin: 0 0 6px;
+            font-family:  'Montserrat-Regular';
+            font-size: 11px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.09;
+            letter-spacing: normal;
+            color: #000;
+        }
+        .coverClientEmail {
+            width: 237px;
+            height: 13px;
+            margin: 6px 0;
+            font-family: 'Montserrat-Regular';
+            font-size: 11px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.09;
+            letter-spacing: normal;
+            color: #000;
+        }
+        .coverClientAddress {
+            width: 237px;
+            height: 24px;
+            margin: 6px 0 0;
+            font-family: 'Montserrat-Regular';
+            font-size: 11px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.09;
+            letter-spacing: normal;
+            color: #000;
+        }
+    
+        .coverHeaderTextBold {
+        font-family: 'Montserrat-SemiBold';
+        font-size: 11px;
+        color: #000;
+        font-style: normal;
+        letter-spacing: normal;
+        font-stretch: normal;
+        }
+        .coverHeaderText {
+        font-family: 'Montserrat-Regular';
+        font-size: 11px;
+        font-style: normal;
+        color: #000;
+        }
+    
+    
+        .coverImageContainer {
+            height: 144px;
+            width: 100%;
+        }
+        .coverImage{
+            min-height: 144px;
+        }
+    
+    
+        .coverTitleContainer {
+            height: 472px;
+            width: 100%;
+        }
+        .coverTitleText {
+            height: 43px;
+            margin: 37px 105px 10px 34px;
+            font-family: Montserrat;
+            font-size: 35px;
+            font-weight: 800;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #000;
+        }
+        .coverTitleText2 {
+            height: 33px;
+            margin: 10px 105px 349px 34px;
+            font-family: Montserrat;
+            font-size: 25px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.32;
+            letter-spacing: normal;
+            color: #000;
+        }
+    
+        .coverFooter {
+            height: 72px;
+        }
+    
+        .coverAdvisorInformation {
+        height: 72px;
+        margin-left: 439px;
+        }
+    
+        .coverFooterText {
+        font-family: 'Montserrat-Regular';
+        color: #15284b;
+        font-size: 9px;
+        margin-top: 5px;
+        }
+    
+        /* PAGE */
+    
+        .pageHeader {
+        height: 112px;
+        }
+    
+        .pageImage {
+        height: 40px;
+        top: 41px;
+        left: 65px;
+        }
+    
+        .pageBody {
+        height: 662px;
+        }
+    
+        .pageTitle {
+        height: 38px;
+        width: 465px;
+        margin-left: 65px;
+        border-color: #15284b;
+        border-bottom-width: 1.2px;
+        }
+    
+        .pageTitleCircle {
+        background-color: #15284b;
+        border-width: 3px;
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        top: 8px;
+        }
+    
+        .pageTitleText {
+        font-family: 'Montserrat-Bold';
+        font-size: 20px;
+        font-style: normal;
+        text-align: right;
+        color: #15284b;
+        }
+    
+        .clientNameTitles {
+        margin-top: 9px;
+        width: 178px;
+        height: 24px;
+        flex-direction: row;
+        }
+        .clientNameTitleText {
+        font-family: 'Montserrat-Regular';
+        color: #15284b;
+        font-size: 13px;
+        }
+        .clientNameTitleIcon {
+        top: 5px;
+        left: 8px;
+        }
+    
+        .pageSubsectionTitle {
+        width: 209px;
+        height: 19px;
+        font-family: 'Montserrat-Medium';
+        font-size: 16px;
+        color: rgba(21, 40, 75, 0.53); /* #15284b */
+        }
+    
+        .pageField {
+        flex-direction: row;
+        }
+        .pageFieldJoint {
+        flex-direction: column;
+        }
+    
+        .pageFieldTitle {
+        margin-right: 47px;
+        width: 209px;
+        font-family: 'Montserrat-Bold';
+        font-size: 11px;
+        color: #000;
+        }
+        .pageFieldData {
+        width: 209px;
+        font-family: 'Montserrat-Regular';
+        font-size: 11px;
+        color: rgba(0, 0, 0, 0.7);
+        }
+    
+        /* footer */
+        .pageFooter {
+        height: 68px;
+        width: 595px;
+        }
+        .footerSeparator {
+        height: 36px;
+        margin-top: 30px;
+        width: 1px;
+        background-color: rgba(21, 40, 75, 0.15);
+        }
+        .footerCircle {
+        border-color: rgba(21, 40, 75, 0.15);
+        border-width: 3px;
+        height: 5px;
+        width: 5px;
+        border-radius: 50%;
+        top: 24px;
+        left: 3.5px;
+        }
+    
+        .pageDisclamer {
+        width: 431px;
+        flex-direction: row;
+        display: flex;
+        justify-content: flex-end;
+        }
+        .pageDisclamerText {
+        font-family: 'Montserrat-Regular';
+        text-align: justify;
+        font-size: 7px;
+        padding-left: 59px;
+        padding-right: 19px;
+        padding-top: 24px;
+        }
+    
+        .pageNumber {
+        width: 141px;
+        padding-right: 65px;
+        padding-left: 17px;
+        }
+    
+        .pageNumberText {
+        font-family: 'Montserrat-Regular';
+        font-size: 10px;
+        text-align: right;
+        color: rgba(0, 0, 0, 0.7);
+        padding-top: 24px;
+        }
+      
+      
+    </style></head>
+<body>
+    <div>
+    
+
+        <div class="page">
+
+                <head>
+                  <style>
+                      /* PAGE */
+                  
+                      .cover {
+                          width: 595px;
+                          height: 842px;
+                          border-width: 1px;
+                          display: flex;
+                          justify-content: flex-start;
+                      }
+                  
+                      .page {
+                          width: 595px;
+                          height: 842px;
+                          display: flex;
+                          flex-direction: column;
+                      }
+                  
+                      /* COVER */
+                  
+                      .coverHeader {
+                          height: 154px;
+                          width: 595px;
+                          display: flex;
+                          flex-direction: row;
+                          justify-content: flex-start;
+                      }
+                  
+                      .coverClientInformationContainer1 {
+                          height: 154px;
+                          width: 237px;
+                          margin-left: 34px;
+                  
+                      }
+                      .coverClientInformationContainer2 {
+                          height: 154px;
+                          width: 237px;
+                          margin-left: 55px;
+                      }
+                      
+                      .coverClientFullName {
+                          width: 237px;
+                          height: 14px;
+                          margin-top: 29px;
+                          font-family: 'Montserrat-Regular';
+                          font-size: 11px;
+                          font-weight: bold;
+                          font-stretch: normal;
+                          font-style: normal;
+                          line-height: normal;
+                          letter-spacing: normal;
+                          color: #000;
+                      }
+                      .coverClientTelephone {
+                          width: 237px;
+                          height: 13px;
+                          margin: 0 0 6px;
+                          font-family:  'Montserrat-Regular';
+                          font-size: 11px;
+                          font-weight: normal;
+                          font-stretch: normal;
+                          font-style: normal;
+                          line-height: 1.09;
+                          letter-spacing: normal;
+                          color: #000;
+                      }
+                      .coverClientEmail {
+                          width: 237px;
+                          height: 13px;
+                          margin: 6px 0;
+                          font-family: 'Montserrat-Regular';
+                          font-size: 11px;
+                          font-weight: normal;
+                          font-stretch: normal;
+                          font-style: normal;
+                          line-height: 1.09;
+                          letter-spacing: normal;
+                          color: #000;
+                      }
+                      .coverClientAddress {
+                          width: 237px;
+                          height: 24px;
+                          margin: 6px 0 0;
+                          font-family: 'Montserrat-Regular';
+                          font-size: 11px;
+                          font-weight: normal;
+                          font-stretch: normal;
+                          font-style: normal;
+                          line-height: 1.09;
+                          letter-spacing: normal;
+                          color: #000;
+                      }
+                  
+                      .coverHeaderTextBold {
+                      font-family: 'Montserrat-SemiBold';
+                      font-size: 11px;
+                      color: #000;
+                      font-style: normal;
+                      letter-spacing: normal;
+                      font-stretch: normal;
+                      }
+                      .coverHeaderText {
+                      font-family: 'Montserrat-Regular';
+                      font-size: 11px;
+                      font-style: normal;
+                      color: #000;
+                      }
+                  
+                  
+                      .coverImageContainer {
+                          height: 144px;
+                          width: 100%;
+                      }
+                      .coverImage{
+                          min-height: 144px;
+                      }
+                  
+                  
+                      .coverTitleContainer {
+                          height: 472px;
+                          width: 100%;
+                      }
+                      .coverTitleText {
+                          height: 43px;
+                          margin: 37px 105px 10px 34px;
+                          font-family: Montserrat;
+                          font-size: 35px;
+                          font-weight: 800;
+                          font-stretch: normal;
+                          font-style: normal;
+                          line-height: normal;
+                          letter-spacing: normal;
+                          color: #000;
+                      }
+                      .coverTitleText2 {
+                          height: 33px;
+                          margin: 10px 105px 349px 34px;
+                          font-family: Montserrat;
+                          font-size: 25px;
+                          font-weight: 500;
+                          font-stretch: normal;
+                          font-style: normal;
+                          line-height: 1.32;
+                          letter-spacing: normal;
+                          color: #000;
+                      }
+                  
+                      .coverFooter {
+                          height: 72px;
+                      }
+                  
+                      .coverAdvisorInformation {
+                      height: 72px;
+                      margin-left: 439px;
+                      }
+                  
+                      .coverFooterText {
+                      font-family: 'Montserrat-Regular';
+                      color: #15284b;
+                      font-size: 9px;
+                      margin-top: 5px;
+                      }
+                  
+                      /* PAGE */
+                  
+                      .pageHeader {
+                      height: 112px;
+                      }
+                  
+                      .pageImage {
+                      height: 40px;
+                      top: 41px;
+                      left: 65px;
+                      }
+                  
+                      .pageBody {
+                      height: 662px;
+                      }
+                  
+                      .pageTitle {
+                      height: 38px;
+                      width: 465px;
+                      margin-left: 65px;
+                      border-color: #15284b;
+                      border-bottom-width: 1.2px;
+                      }
+                  
+                      .pageTitleCircle {
+                      background-color: #15284b;
+                      border-width: 3px;
+                      height: 10px;
+                      width: 10px;
+                      border-radius: 50%;
+                      top: 8px;
+                      }
+                  
+                      .pageTitleText {
+                      font-family: 'Montserrat-Bold';
+                      font-size: 20px;
+                      font-style: normal;
+                      text-align: right;
+                      color: #15284b;
+                      }
+                  
+                      .clientNameTitles {
+                      margin-top: 9px;
+                      width: 178px;
+                      height: 24px;
+                      flex-direction: row;
+                      }
+                      .clientNameTitleText {
+                      font-family: 'Montserrat-Regular';
+                      color: #15284b;
+                      font-size: 13px;
+                      }
+                      .clientNameTitleIcon {
+                      top: 5px;
+                      left: 8px;
+                      }
+                  
+                      .pageSubsectionTitle {
+                      width: 209px;
+                      height: 19px;
+                      font-family: 'Montserrat-Medium';
+                      font-size: 16px;
+                      color: rgba(21, 40, 75, 0.53); /* #15284b */
+                      }
+                  
+                      .pageField {
+                      flex-direction: row;
+                      }
+                      .pageFieldJoint {
+                      flex-direction: column;
+                      }
+                  
+                      .pageFieldTitle {
+                      margin-right: 47px;
+                      width: 209px;
+                      font-family: 'Montserrat-Bold';
+                      font-size: 11px;
+                      color: #000;
+                      }
+                      .pageFieldData {
+                      width: 209px;
+                      font-family: 'Montserrat-Regular';
+                      font-size: 11px;
+                      color: rgba(0, 0, 0, 0.7);
+                      }
+                  
+                      /* footer */
+                      .pageFooter {
+                      height: 68px;
+                      width: 595px;
+                      }
+                      .footerSeparator {
+                      height: 36px;
+                      margin-top: 30px;
+                      width: 1px;
+                      background-color: rgba(21, 40, 75, 0.15);
+                      }
+                      .footerCircle {
+                      border-color: rgba(21, 40, 75, 0.15);
+                      border-width: 3px;
+                      height: 5px;
+                      width: 5px;
+                      border-radius: 50%;
+                      top: 24px;
+                      left: 3.5px;
+                      }
+                  
+                      .pageDisclamer {
+                      width: 431px;
+                      flex-direction: row;
+                      display: flex;
+                      justify-content: flex-end;
+                      }
+                      .pageDisclamerText {
+                      font-family: 'Montserrat-Regular';
+                      text-align: justify;
+                      font-size: 7px;
+                      padding-left: 59px;
+                      padding-right: 19px;
+                      padding-top: 24px;
+                      }
+                  
+                      .pageNumber {
+                      width: 141px;
+                      padding-right: 65px;
+                      padding-left: 17px;
+                      }
+                  
+                      .pageNumberText {
+                      font-family: 'Montserrat-Regular';
+                      font-size: 10px;
+                      text-align: right;
+                      color: rgba(0, 0, 0, 0.7);
+                      padding-top: 24px;
+                      }
+                    
+                    
+                  </style></head>
+                <body>
+                    <div class="coverHeader">
+                          <div class="coverClientInformationContainer1">
+                            <p class="coverClientFullName">Mr. Demo Client 1</p>
+                            <p class="coverClientTelephone">0987654321</p>
+                            <p class="coverClientEmail">mail@mail.com</p>
+                            <p class="coverClientAddress">Building, Line 1, Line 2,
+                United Kingdom, PC454323</p>
+                          </div>
+                          <div class="coverClientInformationContainer2">
+                            <p class="coverClientFullName"> Demo Client 2</p>
+                            <p class="coverClientTelephone">+44 1234 567890</p>
+                            <p class="coverClientEmail">jo@gmail.com</p>
+                            <p class="coverClientAddress">Apartment 12, 123 Main Street, Line 2,
+                United Kingdom, SW1A 1AA</p>
+                          </div>
+                    </div>
+                </body>                <head>
+                  <style>
+                      /* PAGE */
+                  
+                      .cover {
+                          width: 595px;
+                          height: 842px;
+                          border-width: 1px;
+                          display: flex;
+                          justify-content: flex-start;
+                      }
+                  
+                      .page {
+                          width: 595px;
+                          height: 842px;
+                          display: flex;
+                          flex-direction: column;
+                      }
+                  
+                      /* COVER */
+                  
+                      .coverHeader {
+                          height: 154px;
+                          width: 595px;
+                          display: flex;
+                          flex-direction: row;
+                          justify-content: flex-start;
+                      }
+                  
+                      .coverClientInformationContainer1 {
+                          height: 154px;
+                          width: 237px;
+                          margin-left: 34px;
+                  
+                      }
+                      .coverClientInformationContainer2 {
+                          height: 154px;
+                          width: 237px;
+                          margin-left: 55px;
+                      }
+                      
+                      .coverClientFullName {
+                          width: 237px;
+                          height: 14px;
+                          margin-top: 29px;
+                          font-family: 'Montserrat-Regular';
+                          font-size: 11px;
+                          font-weight: bold;
+                          font-stretch: normal;
+                          font-style: normal;
+                          line-height: normal;
+                          letter-spacing: normal;
+                          color: #000;
+                      }
+                      .coverClientTelephone {
+                          width: 237px;
+                          height: 13px;
+                          margin: 0 0 6px;
+                          font-family:  'Montserrat-Regular';
+                          font-size: 11px;
+                          font-weight: normal;
+                          font-stretch: normal;
+                          font-style: normal;
+                          line-height: 1.09;
+                          letter-spacing: normal;
+                          color: #000;
+                      }
+                      .coverClientEmail {
+                          width: 237px;
+                          height: 13px;
+                          margin: 6px 0;
+                          font-family: 'Montserrat-Regular';
+                          font-size: 11px;
+                          font-weight: normal;
+                          font-stretch: normal;
+                          font-style: normal;
+                          line-height: 1.09;
+                          letter-spacing: normal;
+                          color: #000;
+                      }
+                      .coverClientAddress {
+                          width: 237px;
+                          height: 24px;
+                          margin: 6px 0 0;
+                          font-family: 'Montserrat-Regular';
+                          font-size: 11px;
+                          font-weight: normal;
+                          font-stretch: normal;
+                          font-style: normal;
+                          line-height: 1.09;
+                          letter-spacing: normal;
+                          color: #000;
+                      }
+                  
+                      .coverHeaderTextBold {
+                      font-family: 'Montserrat-SemiBold';
+                      font-size: 11px;
+                      color: #000;
+                      font-style: normal;
+                      letter-spacing: normal;
+                      font-stretch: normal;
+                      }
+                      .coverHeaderText {
+                      font-family: 'Montserrat-Regular';
+                      font-size: 11px;
+                      font-style: normal;
+                      color: #000;
+                      }
+                  
+                  
+                      .coverImageContainer {
+                          height: 144px;
+                          width: 100%;
+                      }
+                      .coverImage{
+                          min-height: 144px;
+                      }
+                  
+                  
+                      .coverTitleContainer {
+                          height: 472px;
+                          width: 100%;
+                      }
+                      .coverTitleText {
+                          height: 43px;
+                          margin: 37px 105px 10px 34px;
+                          font-family: Montserrat;
+                          font-size: 35px;
+                          font-weight: 800;
+                          font-stretch: normal;
+                          font-style: normal;
+                          line-height: normal;
+                          letter-spacing: normal;
+                          color: #000;
+                      }
+                      .coverTitleText2 {
+                          height: 33px;
+                          margin: 10px 105px 349px 34px;
+                          font-family: Montserrat;
+                          font-size: 25px;
+                          font-weight: 500;
+                          font-stretch: normal;
+                          font-style: normal;
+                          line-height: 1.32;
+                          letter-spacing: normal;
+                          color: #000;
+                      }
+                  
+                      .coverFooter {
+                          height: 72px;
+                      }
+                  
+                      .coverAdvisorInformation {
+                      height: 72px;
+                      margin-left: 439px;
+                      }
+                  
+                      .coverFooterText {
+                      font-family: 'Montserrat-Regular';
+                      color: #15284b;
+                      font-size: 9px;
+                      margin-top: 5px;
+                      }
+                  
+                      /* PAGE */
+                  
+                      .pageHeader {
+                      height: 112px;
+                      }
+                  
+                      .pageImage {
+                      height: 40px;
+                      top: 41px;
+                      left: 65px;
+                      }
+                  
+                      .pageBody {
+                      height: 662px;
+                      }
+                  
+                      .pageTitle {
+                      height: 38px;
+                      width: 465px;
+                      margin-left: 65px;
+                      border-color: #15284b;
+                      border-bottom-width: 1.2px;
+                      }
+                  
+                      .pageTitleCircle {
+                      background-color: #15284b;
+                      border-width: 3px;
+                      height: 10px;
+                      width: 10px;
+                      border-radius: 50%;
+                      top: 8px;
+                      }
+                  
+                      .pageTitleText {
+                      font-family: 'Montserrat-Bold';
+                      font-size: 20px;
+                      font-style: normal;
+                      text-align: right;
+                      color: #15284b;
+                      }
+                  
+                      .clientNameTitles {
+                      margin-top: 9px;
+                      width: 178px;
+                      height: 24px;
+                      flex-direction: row;
+                      }
+                      .clientNameTitleText {
+                      font-family: 'Montserrat-Regular';
+                      color: #15284b;
+                      font-size: 13px;
+                      }
+                      .clientNameTitleIcon {
+                      top: 5px;
+                      left: 8px;
+                      }
+                  
+                      .pageSubsectionTitle {
+                      width: 209px;
+                      height: 19px;
+                      font-family: 'Montserrat-Medium';
+                      font-size: 16px;
+                      color: rgba(21, 40, 75, 0.53); /* #15284b */
+                      }
+                  
+                      .pageField {
+                      flex-direction: row;
+                      }
+                      .pageFieldJoint {
+                      flex-direction: column;
+                      }
+                  
+                      .pageFieldTitle {
+                      margin-right: 47px;
+                      width: 209px;
+                      font-family: 'Montserrat-Bold';
+                      font-size: 11px;
+                      color: #000;
+                      }
+                      .pageFieldData {
+                      width: 209px;
+                      font-family: 'Montserrat-Regular';
+                      font-size: 11px;
+                      color: rgba(0, 0, 0, 0.7);
+                      }
+                  
+                      /* footer */
+                      .pageFooter {
+                      height: 68px;
+                      width: 595px;
+                      }
+                      .footerSeparator {
+                      height: 36px;
+                      margin-top: 30px;
+                      width: 1px;
+                      background-color: rgba(21, 40, 75, 0.15);
+                      }
+                      .footerCircle {
+                      border-color: rgba(21, 40, 75, 0.15);
+                      border-width: 3px;
+                      height: 5px;
+                      width: 5px;
+                      border-radius: 50%;
+                      top: 24px;
+                      left: 3.5px;
+                      }
+                  
+                      .pageDisclamer {
+                      width: 431px;
+                      flex-direction: row;
+                      display: flex;
+                      justify-content: flex-end;
+                      }
+                      .pageDisclamerText {
+                      font-family: 'Montserrat-Regular';
+                      text-align: justify;
+                      font-size: 7px;
+                      padding-left: 59px;
+                      padding-right: 19px;
+                      padding-top: 24px;
+                      }
+                  
+                      .pageNumber {
+                      width: 141px;
+                      padding-right: 65px;
+                      padding-left: 17px;
+                      }
+                  
+                      .pageNumberText {
+                      font-family: 'Montserrat-Regular';
+                      font-size: 10px;
+                      text-align: right;
+                      color: rgba(0, 0, 0, 0.7);
+                      padding-top: 24px;
+                      }
+                    
+                    
+                  </style></head>
+                <body>
+                    <div class="coverImageContainer">
+                        <img src=/Users/pablomarconi/summary-pdf-backend/src/assets/images/summaryExportCover.png alt="[CoverImage]" class="coverImage">
+                    </div>
+                </body>                <head>
+                  <style>
+                      /* PAGE */
+                  
+                      .cover {
+                          width: 595px;
+                          height: 842px;
+                          border-width: 1px;
+                          display: flex;
+                          justify-content: flex-start;
+                      }
+                  
+                      .page {
+                          width: 595px;
+                          height: 842px;
+                          display: flex;
+                          flex-direction: column;
+                      }
+                  
+                      /* COVER */
+                  
+                      .coverHeader {
+                          height: 154px;
+                          width: 595px;
+                          display: flex;
+                          flex-direction: row;
+                          justify-content: flex-start;
+                      }
+                  
+                      .coverClientInformationContainer1 {
+                          height: 154px;
+                          width: 237px;
+                          margin-left: 34px;
+                  
+                      }
+                      .coverClientInformationContainer2 {
+                          height: 154px;
+                          width: 237px;
+                          margin-left: 55px;
+                      }
+                      
+                      .coverClientFullName {
+                          width: 237px;
+                          height: 14px;
+                          margin-top: 29px;
+                          font-family: 'Montserrat-Regular';
+                          font-size: 11px;
+                          font-weight: bold;
+                          font-stretch: normal;
+                          font-style: normal;
+                          line-height: normal;
+                          letter-spacing: normal;
+                          color: #000;
+                      }
+                      .coverClientTelephone {
+                          width: 237px;
+                          height: 13px;
+                          margin: 0 0 6px;
+                          font-family:  'Montserrat-Regular';
+                          font-size: 11px;
+                          font-weight: normal;
+                          font-stretch: normal;
+                          font-style: normal;
+                          line-height: 1.09;
+                          letter-spacing: normal;
+                          color: #000;
+                      }
+                      .coverClientEmail {
+                          width: 237px;
+                          height: 13px;
+                          margin: 6px 0;
+                          font-family: 'Montserrat-Regular';
+                          font-size: 11px;
+                          font-weight: normal;
+                          font-stretch: normal;
+                          font-style: normal;
+                          line-height: 1.09;
+                          letter-spacing: normal;
+                          color: #000;
+                      }
+                      .coverClientAddress {
+                          width: 237px;
+                          height: 24px;
+                          margin: 6px 0 0;
+                          font-family: 'Montserrat-Regular';
+                          font-size: 11px;
+                          font-weight: normal;
+                          font-stretch: normal;
+                          font-style: normal;
+                          line-height: 1.09;
+                          letter-spacing: normal;
+                          color: #000;
+                      }
+                  
+                      .coverHeaderTextBold {
+                      font-family: 'Montserrat-SemiBold';
+                      font-size: 11px;
+                      color: #000;
+                      font-style: normal;
+                      letter-spacing: normal;
+                      font-stretch: normal;
+                      }
+                      .coverHeaderText {
+                      font-family: 'Montserrat-Regular';
+                      font-size: 11px;
+                      font-style: normal;
+                      color: #000;
+                      }
+                  
+                  
+                      .coverImageContainer {
+                          height: 144px;
+                          width: 100%;
+                      }
+                      .coverImage{
+                          min-height: 144px;
+                      }
+                  
+                  
+                      .coverTitleContainer {
+                          height: 472px;
+                          width: 100%;
+                      }
+                      .coverTitleText {
+                          height: 43px;
+                          margin: 37px 105px 10px 34px;
+                          font-family: Montserrat;
+                          font-size: 35px;
+                          font-weight: 800;
+                          font-stretch: normal;
+                          font-style: normal;
+                          line-height: normal;
+                          letter-spacing: normal;
+                          color: #000;
+                      }
+                      .coverTitleText2 {
+                          height: 33px;
+                          margin: 10px 105px 349px 34px;
+                          font-family: Montserrat;
+                          font-size: 25px;
+                          font-weight: 500;
+                          font-stretch: normal;
+                          font-style: normal;
+                          line-height: 1.32;
+                          letter-spacing: normal;
+                          color: #000;
+                      }
+                  
+                      .coverFooter {
+                          height: 72px;
+                      }
+                  
+                      .coverAdvisorInformation {
+                      height: 72px;
+                      margin-left: 439px;
+                      }
+                  
+                      .coverFooterText {
+                      font-family: 'Montserrat-Regular';
+                      color: #15284b;
+                      font-size: 9px;
+                      margin-top: 5px;
+                      }
+                  
+                      /* PAGE */
+                  
+                      .pageHeader {
+                      height: 112px;
+                      }
+                  
+                      .pageImage {
+                      height: 40px;
+                      top: 41px;
+                      left: 65px;
+                      }
+                  
+                      .pageBody {
+                      height: 662px;
+                      }
+                  
+                      .pageTitle {
+                      height: 38px;
+                      width: 465px;
+                      margin-left: 65px;
+                      border-color: #15284b;
+                      border-bottom-width: 1.2px;
+                      }
+                  
+                      .pageTitleCircle {
+                      background-color: #15284b;
+                      border-width: 3px;
+                      height: 10px;
+                      width: 10px;
+                      border-radius: 50%;
+                      top: 8px;
+                      }
+                  
+                      .pageTitleText {
+                      font-family: 'Montserrat-Bold';
+                      font-size: 20px;
+                      font-style: normal;
+                      text-align: right;
+                      color: #15284b;
+                      }
+                  
+                      .clientNameTitles {
+                      margin-top: 9px;
+                      width: 178px;
+                      height: 24px;
+                      flex-direction: row;
+                      }
+                      .clientNameTitleText {
+                      font-family: 'Montserrat-Regular';
+                      color: #15284b;
+                      font-size: 13px;
+                      }
+                      .clientNameTitleIcon {
+                      top: 5px;
+                      left: 8px;
+                      }
+                  
+                      .pageSubsectionTitle {
+                      width: 209px;
+                      height: 19px;
+                      font-family: 'Montserrat-Medium';
+                      font-size: 16px;
+                      color: rgba(21, 40, 75, 0.53); /* #15284b */
+                      }
+                  
+                      .pageField {
+                      flex-direction: row;
+                      }
+                      .pageFieldJoint {
+                      flex-direction: column;
+                      }
+                  
+                      .pageFieldTitle {
+                      margin-right: 47px;
+                      width: 209px;
+                      font-family: 'Montserrat-Bold';
+                      font-size: 11px;
+                      color: #000;
+                      }
+                      .pageFieldData {
+                      width: 209px;
+                      font-family: 'Montserrat-Regular';
+                      font-size: 11px;
+                      color: rgba(0, 0, 0, 0.7);
+                      }
+                  
+                      /* footer */
+                      .pageFooter {
+                      height: 68px;
+                      width: 595px;
+                      }
+                      .footerSeparator {
+                      height: 36px;
+                      margin-top: 30px;
+                      width: 1px;
+                      background-color: rgba(21, 40, 75, 0.15);
+                      }
+                      .footerCircle {
+                      border-color: rgba(21, 40, 75, 0.15);
+                      border-width: 3px;
+                      height: 5px;
+                      width: 5px;
+                      border-radius: 50%;
+                      top: 24px;
+                      left: 3.5px;
+                      }
+                  
+                      .pageDisclamer {
+                      width: 431px;
+                      flex-direction: row;
+                      display: flex;
+                      justify-content: flex-end;
+                      }
+                      .pageDisclamerText {
+                      font-family: 'Montserrat-Regular';
+                      text-align: justify;
+                      font-size: 7px;
+                      padding-left: 59px;
+                      padding-right: 19px;
+                      padding-top: 24px;
+                      }
+                  
+                      .pageNumber {
+                      width: 141px;
+                      padding-right: 65px;
+                      padding-left: 17px;
+                      }
+                  
+                      .pageNumberText {
+                      font-family: 'Montserrat-Regular';
+                      font-size: 10px;
+                      text-align: right;
+                      color: rgba(0, 0, 0, 0.7);
+                      padding-top: 24px;
+                      }
+                    
+                    
+                  </style></head>
+                <body>
+                    <div class="coverTitleContainer">
+                            <p class="coverTitleText"}>
+                                Client Summary
+                            </p>
+                            <p class="coverTitleText2"}>
+                                Private &amp; confidential
+                            </p>
+                    </div>
+                </body>                <div class="coverFooter">
+                    <div class="coverAdvisorInformation">
+                        <p class="coverFooterText">
+                            Document date: 10-04-2023
+                        </p>
+                        <p class="coverFooterText">
+                            Advisor: Pablo Marconi
+                        </p>
+                        <p class="coverFooterText">
+                            Clair Vincent
+                        </p>
+                    </div>
+                </div>
+        </div>
+
+
+</div>
+</body>
+</html>

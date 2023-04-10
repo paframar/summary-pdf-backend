@@ -1,0 +1,36 @@
+<head>
+  {{>stylesPartial}}
+</head>
+<body>
+  {{#if joint}}
+    <div class="coverHeader">
+      {{#if clientData.client1}}
+          <div class="coverClientInformationContainer1">
+            <p class="coverClientFullName">{{clientData.client1.fullName}}</p>
+            <p class="coverClientTelephone">{{clientData.client1.telephone}}</p>
+            <p class="coverClientEmail">{{clientData.client1.email}}</p>
+            <p class="coverClientAddress">{{clientData.client1.homeAddress}}</p>
+          </div>
+      {{/if}}
+      {{#if clientData.client2}}
+          <div class="coverClientInformationContainer2">
+            <p class="coverClientFullName">{{clientData.client2.fullName}}</p>
+            <p class="coverClientTelephone">{{clientData.client2.telephone}}</p>
+            <p class="coverClientEmail">{{clientData.client2.email}}</p>
+            <p class="coverClientAddress">{{clientData.client2.homeAddress}}</p>
+          </div>
+      {{/if}}
+    </div>
+  {{else}}
+    <div class="coverHeader">
+      {{#if clientData.client1}}
+          <div class="coverClientInformationContainer1">
+            <p class="coverClientFullName">{{clientData.client1.fullName}}</p>
+            <p class="coverClientTelephone">{{clientData.client1.telephone}}</p>
+            <p class="coverClientEmail">{{clientData.client1.email}}</p>
+            <p class="coverClientAddress">{{clientData.client1.homeAddress}}</p>
+          </div>
+      {{/if}}
+    </div>
+  {{/if}}
+</body>

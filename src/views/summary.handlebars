@@ -1,0 +1,15 @@
+<div>
+    
+    {{#each pages}}
+
+        <div class="page">
+
+            {{#each this.partials}}
+                {{>(lookup . 'name' ) props }}
+            {{/each}}
+
+        </div>
+
+    {{/each}}
+
+</div>
